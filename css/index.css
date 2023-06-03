@@ -1,0 +1,560 @@
+* {
+  z-index: 1;
+}
+
+nav {
+  padding-top: 38px;
+  padding-bottom: 25px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  display: flex;
+  width: 100%;
+  font-weight: 700;
+  justify-content: space-between;
+}
+nav .logo {
+  position: relative;
+  top: -3px;
+}
+nav span:nth-child(1) {
+  display: flex;
+  gap: 20px;
+}
+nav span:nth-child(1) a {
+  color: black;
+  transition: 0.25s;
+}
+nav span:nth-child(1) a:hover {
+  color: rgb(106, 106, 106);
+}
+
+.get_a_card {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  top: -9.5px;
+  gap: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #2E2EC8;
+  border-radius: 1000px;
+  border: 1px solid #2E2EC8;
+  transition: 0.25s;
+  line-height: 12px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  background-color: white;
+  font-weight: 700;
+}
+.get_a_card img {
+  transition: 0.25s;
+}
+.get_a_card:hover {
+  gap: 17px;
+  border-color: #4c4cce;
+}
+.get_a_card:hover img {
+  margin-right: -7px;
+}
+
+.bg_circle {
+  width: 50%;
+  top: 0;
+  right: 0;
+}
+
+.bg_pattern {
+  z-index: 0;
+  position: absolute;
+}
+
+.wavy_lines {
+  left: 0;
+  top: 141px;
+  width: 548px;
+}
+
+.starting_info_panel {
+  border-radius: 32px;
+  padding: 112px 96px 82px 96px;
+  background-color: white;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  font-family: "Manrope", sans-serif;
+  color: #2E2EC8;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+}
+.starting_info_panel .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 10;
+}
+.starting_info_panel .main .description {
+  font-size: 16px;
+  color: #272A39;
+  line-height: 25px;
+}
+.starting_info_panel .main strong {
+  font-size: 55px;
+  line-height: 50px;
+}
+.starting_info_panel .main .tiles {
+  width: 76px;
+}
+.starting_info_panel .main header {
+  line-height: 60px;
+}
+.starting_info_panel .main #blueish_button {
+  font-size: 16px;
+  background-color: #2E2EC8;
+  color: white;
+  margin-top: 50px;
+}
+.starting_info_panel #hero_image {
+  margin-top: -172px;
+  margin-bottom: -82px;
+  margin-right: -120px;
+  margin-left: -120px;
+}
+
+.advantages {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Manrope", sans-serif;
+  justify-content: space-between;
+}
+.advantages .holder {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  height: fit-content;
+  height: 264px;
+  padding: 32px;
+  padding-bottom: 40px;
+}
+.advantages .holder h3,
+.advantages .holder h4 {
+  font-weight: 700;
+  font-size: 48px;
+}
+.advantages .holder .tiles {
+  width: 76px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+.advantages .holder .get_a_card {
+  font-size: 16px;
+  margin-top: 0;
+}
+.advantages .info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 32px;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0;
+  height: 244px;
+  bottom: -85px;
+  font-size: 16px;
+}
+.advantages .info div {
+  margin-bottom: -25px;
+}
+.advantages .info div h4 {
+  font-size: 28px;
+  color: #191B24;
+  line-height: 27px;
+  margin-bottom: -5px;
+}
+
+.main_text {
+  margin-bottom: 30px;
+  font-family: "Manrope", sans-serif;
+  z-index: 10;
+  position: relative;
+}
+.main_text h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.main_text img {
+  position: relative;
+  top: -20px;
+}
+
+.how_it_works {
+  width: 100%;
+  background: #00D5AE;
+  left: 0;
+  margin-top: 150px;
+  font-family: "Manrope", sans-serif;
+  padding-top: 56px;
+  padding-bottom: 76px;
+}
+.how_it_works .cards {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  gap: 32px;
+}
+.how_it_works .cards .cards_image {
+  position: absolute;
+  right: 160px;
+  height: 770px;
+  z-index: 10;
+  margin-top: -80px;
+}
+.how_it_works .cards .card {
+  width: calc(100% - 180px);
+  border-radius: 32px;
+  background-color: white;
+  padding: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.how_it_works .cards .card p {
+  width: fit-content;
+}
+.how_it_works .cards .card .number {
+  font-size: 90px;
+  font-weight: 200;
+  line-height: 0px;
+  color: #F5BD01;
+}
+.how_it_works .cards .card .text {
+  font-weight: 400;
+  font-size: 21px;
+}
+.how_it_works .cards .card:nth-child(3), .how_it_works .cards .card:nth-child(5) {
+  margin-left: 60px;
+  width: calc(100% - 300px) !important;
+}
+.how_it_works .cards .card:nth-child(1) .text {
+  padding-right: 340px;
+}
+.how_it_works .cards .card:nth-child(4) .text {
+  padding-right: 300px;
+}
+
+.green_fill {
+  right: 0px;
+  margin-top: -350px;
+  width: 576px;
+}
+
+.ratings_container {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.ratings_container .main_text > h2 {
+  color: black !important;
+}
+.ratings_container .ratings {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: fit-content;
+  width: 100%;
+  overflow: auto;
+}
+.ratings_container .ratings .rating {
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  padding: 38px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  min-width: 400px;
+  height: 100%;
+}
+.ratings_container .ratings .rating p {
+  margin-top: 5px;
+}
+.ratings_container .ratings .rating .avatar {
+  width: 120px;
+}
+.ratings_container .ratings .rating .quote {
+  width: 36px;
+}
+.ratings_container .ratings .rating .creator {
+  display: flex;
+  gap: 5px;
+  margin-top: -17px;
+}
+
+.green_pattern2 {
+  left: 0;
+  margin-top: -420px;
+}
+
+.form {
+  position: relative;
+  height: fit-content;
+}
+.form .backdrop_pattern {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0vw;
+}
+
+.get_the_card {
+  background-color: #2E2EC8;
+  color: white;
+  padding: 80px;
+  padding-left: 180px;
+  font-family: "Manrope", sans-serif;
+  padding-right: 180px;
+  width: calc(100% - 360px);
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 32px;
+  text-align: center;
+}
+.get_the_card header {
+  font-size: 30px;
+  font-weight: 700;
+}
+.get_the_card header p {
+  color: #C2C6D6;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -40px;
+}
+.get_the_card header img {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.get_the_card .border_images {
+  position: absolute;
+  height: 500px;
+}
+.get_the_card .wemon {
+  left: 0px;
+  transform: translate(-50%, 0);
+  top: 15px;
+}
+.get_the_card .man {
+  right: 0px;
+  transform: translate(50%, 0);
+  bottom: -15px;
+}
+.get_the_card .inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.get_the_card .inputs .date {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3px;
+  width: 106.5%;
+}
+.get_the_card .inputs .date input {
+  width: 80% !important;
+}
+.get_the_card .inputs .send_zaiavka {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 50px;
+}
+.get_the_card .inputs .inp p {
+  color: #C2C6D6;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.get_the_card .inputs .inp input {
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: white;
+  margin-top: 100px;
+  padding: 35px;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.footer img {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.footer a {
+  color: #191B24;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.footer a:hover {
+  color: rgb(106, 106, 106);
+}
+
+@media (max-width: 1300px) {
+  .advantages .holder {
+    width: 300px;
+  }
+  .cards_image {
+    display: none;
+  }
+  .how_it_works .cards .card:nth-child(1) .text {
+    padding-right: 30px;
+  }
+  .how_it_works .cards .card:nth-child(4) .text {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1170px) {
+  .advantages .holder {
+    width: 250px;
+    font-size: 14px;
+  }
+  .advantages .holder h3,
+  .advantages .holder h4 {
+    font-size: 30px;
+  }
+  .advantages .main {
+    position: relative;
+    bottom: -55px;
+  }
+  .advantages .main .get_a_card {
+    position: relative;
+    top: -45px;
+  }
+}
+@media (max-width: 1030px) {
+  .advantages {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .advantages .main {
+    margin-bottom: -50px;
+  }
+  .advantages .holder {
+    width: 100%;
+  }
+  #hero_image {
+    display: none !important;
+  }
+  .second_line {
+    position: relative;
+    top: 70px;
+    margin-bottom: 250px;
+  }
+}
+@media (max-width: 900px) {
+  .get_the_card {
+    padding-right: 60px;
+    padding-left: 60px;
+    width: calc(100% - 120px);
+  }
+  .border_images {
+    display: none !important;
+  }
+  #wrapper {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    width: calc(100% - 30px);
+  }
+  .form #wrapper {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  nav span:nth-child(1) a:nth-child(2), nav span:nth-child(1) a:nth-child(3), nav span:nth-child(1) a:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .starting_info_panel {
+    padding: 40px 25px 35px 25px;
+  }
+  .how_it_works .cards .card {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: calc(100% - 90px) !important;
+  }
+  .how_it_works .cards .card:nth-child(1) .text {
+    padding-right: 10px;
+  }
+  .how_it_works .cards .card:nth-child(4) .text {
+    padding-right: 10px;
+  }
+  .how_it_works .cards .card:nth-child(3), .how_it_works .cards .card:nth-child(5) {
+    width: calc(100% - 90px) !important;
+  }
+}
+@media (max-width: 660px) {
+  .get_the_card {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    width: calc(100% - 105px) !important;
+    margin-left: -15px;
+  }
+  .get_the_card input {
+    width: calc(100% - 25px) !important;
+  }
+  .form header h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+  .date {
+    grid-template-columns: auto !important;
+  }
+  .date .inp {
+    width: 110%;
+    gap: 0;
+  }
+  .date .inp input {
+    width: 100%;
+  }
+  .get_a_card {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 583px) {
+  .starting_info_panel header {
+    font-size: 23px;
+    line-height: 18px !important;
+  }
+  .starting_info_panel header strong {
+    line-height: 28px !important;
+    font-size: 33px !important;
+  }
+  .starting_info_panel p {
+    font-size: 15px !important;
+  }
+}/*# sourceMappingURL=index.css.map */

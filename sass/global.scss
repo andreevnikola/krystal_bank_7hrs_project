@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@200;400;500;700&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F4F6;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    max-width: 1260px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100% + -60px);
+    height: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
